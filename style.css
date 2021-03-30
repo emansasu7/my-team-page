@@ -52,9 +52,9 @@ header {
 .team-container {
   display: flex;
   flex-direction: column;
-  max-width: 250px;
-  max-height: 350px;
-  margin: 30px 50px;
+  max-width: 200px;
+  max-height: 300px;
+  margin: 0 50px;
 }
 .top-section {
   display: flex;
@@ -79,7 +79,7 @@ header {
 }
 
 .mid-drop {
-  margin-top: 200px;
+  margin-top: 20%;
 }
 
 @media screen and (max-width: 1024px) {
