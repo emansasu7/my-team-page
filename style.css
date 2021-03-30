@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(247, 247, 247);
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 30px;
+  overflow-x: hidden;
+}
+
+header {
+  margin: auto;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+.logo-text {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 30px;
+  margin-left: 70px;
+  word-wrap: none;
+  white-space: nowrap;
+  flex: 1;
+}
+.intro-text {
+  flex: 1;
+}
+.intro-text h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.intro-text p {
+  font-size: 18px;
+  /* font-weight: 500; */
+  margin-right: 10%;
+  line-height: 1.5;
+}
+
+.main-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px auto 0;
+  max-width: 80%;
+}
+.team-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+  max-height: 350px;
+  margin: 30px 50px;
+}
+.top-section {
+  display: flex;
+}
+.team-image {
+  max-width: 100%;
+  background-color: #aaa;
+  margin-bottom: 10px;
+  border-radius: 3px;
+}
+.team-position {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  padding: 0 10px;
+  /* font-size: 14px; */
+}
+.team-name {
+  font-weight: 600;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.mid-drop {
+  margin-top: 200px;
+}
+
+@media screen and (max-width: 1024px) {
+  .logo-text {
+    margin-left: 60px;
+  }
+  .team-container {
+    max-width: 150px;
+    max-height: 250px;
+    margin-bottom: 0;
+  }
+  .mid-drop {
+    margin-top: 100px;
+  }
+}
+@media screen and (max-width: 768px) {
+  header {
+    width: 100%;
+  }
+  .intro-text p {
+    font-size: 16px;
+  }
+  .mid-drop {
+    margin-top: 0px;
+  }
+  .tab-drop {
+    margin-top: 20%;
+  }
+  .main-section {
+    max-width: 100%;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  header {
+    flex-direction: column;
+  }
+  .logo-text {
+    margin-left: 0;
+    margin-bottom: 50px;
+  }
+
+  .intro-text h3,
+  p {
+    font-size: 16px;
+  }
+  .team-container {
+    max-width: 200px;
+    max-height: 300px;
+    margin: 50px;
+  }
+  .tab-drop {
+    margin-top: 0;
+  }
+  .mid-drop {
+    margin-top: 0;
+  }
+}
